@@ -9,13 +9,8 @@ module.exports = {
     appId: 'eytWDTcVXxD6jB2TPPIFVljq-gzGzoHsz',
     appKey: 'sJRhu6ftXLC0eNR4vsjo3Euy',
     logo: '/assets/img/logo.jpg',
-    background: 'http://upyun.cavalheiro.cn/images/background.jpg',
+    background: '/assets/img/background.jpg',
     externalLinks: [
-        {
-            text: 'CodePen',
-            link: 'https://codepen.io/eddievandeer',
-            target: '_blank'
-        },
         {
             text: 'GitHub',
             link: 'https://github.com/eddievandeer/eddievandeer.github.io',

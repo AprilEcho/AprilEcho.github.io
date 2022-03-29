@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Vivek的博客小站',
+    title: '新宿猫的博客小站',
     description: 'May the force be with you',
     plugins: [],
     head: [
@@ -19,7 +19,7 @@ module.exports = {
     smoothScroll: true,
     lastUpdated: 'Last Updated',
     //github的配置
-    repo: 'eddievandeer',
+    repo: 'aprilecho',
     repoLabel: 'Github',
     docsDir: 'docs',
     docsBranch: 'master',
