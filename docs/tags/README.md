@@ -1,0 +1,3 @@
+---
+tagsPage: true
+---

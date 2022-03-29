@@ -1,0 +1,4 @@
+---
+categoriesPage: true
+---
+
