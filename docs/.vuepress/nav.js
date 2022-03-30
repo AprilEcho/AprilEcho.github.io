@@ -14,9 +14,9 @@ module.exports = [
     {
         text: '标签', link: '/tags/'
     },
-    // {
-    //     text: '面试', link: '/interview'
-    // },
+    {
+        text: '面试', link: '/interview'
+    },
     {
         text: '工具箱',
         items: [

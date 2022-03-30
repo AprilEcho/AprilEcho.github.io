@@ -1,6 +1,6 @@
 module.exports = {
     title: '新宿猫的博客小站',
-    description: 'May the force be with you',
+    description: '遇见即是上上签',
     plugins: [],
     head: [
         [
