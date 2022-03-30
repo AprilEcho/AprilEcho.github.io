@@ -10,10 +10,5 @@ module.exports = {
             'webpack',
             'Sass',
             'VuePress'
-      ],
-      '/album/': [
-            ['', '写在前面'],
-            '手绘',
-            '板绘'
       ]
 }
