@@ -1,6 +1,6 @@
 ---
 title: Git的简单使用
-postTime: 2020-08-09
+postTime: 2022-04-10
 categories: 常用工具
 tags:
 - git
@@ -10,8 +10,6 @@ tags:
 ::: slot abstract
 
 [Git](https://git-scm.com/) 的基础使用，分支这块也只涉及一小部分基础知识
-
-> 配合Github演示了对远程仓库的管理
 
 :::
 
@@ -49,7 +47,7 @@ tags:
 >
 > git config --global user.email
 
-![image-20200718161549825](E:\文档\笔记\Git笔记.assets\image-20200718161549825.png)
+
 
 2. 创建仓库
 
@@ -175,7 +173,7 @@ tags:
 
    > git clone 线上仓库地址
 
-![image-20200718190508430](E:\文档\笔记\Git笔记.assets\image-20200718190508430.png)
+
 
 3. 在仓库上做相应操作
 
@@ -207,13 +205,13 @@ tags:
    
    执行完指令后将生成id_rsa.pub文件，使用文本打开，复制其中内容至GitHub的设置中
    
-   ![image-20200719200945117](E:\文档\笔记\Git笔记.assets\image-20200719200945117.png)
+
 
 2. 使用clone指令克隆远程仓库
 
    线上仓库地址：
 
-   ![image-20200720075913580](E:\文档\笔记\Git笔记.assets\image-20200720075913580.png)
+
 
 3. 后续操作与基于HTTPS的一致
 

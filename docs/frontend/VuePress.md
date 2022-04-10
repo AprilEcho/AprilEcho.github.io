@@ -1,11 +1,10 @@
 ---
 title: 使用VuePress开发并部署静态博客网站
-postTime: 2020-08-13
+postTime: 2022-04-10
 categories: 前端教程
 tags:
 - Vue
 - Vuepress
-- 静态博客
 ---
 
 

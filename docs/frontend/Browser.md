@@ -13,8 +13,6 @@ tags:
 
 关于浏览器相关内容的简要笔记
 
-> 只是在我刚接触前端不久，记录的一些很基础的内容，后面打算另外写一篇文章来专门讲浏览器运行原理的内容
-
 :::
 
 ## 构建DOM
@@ -69,5 +67,5 @@ CSSOM是一组允许JavaScript操作CSS的API，类似于DOM
 - layout布局（回流），即让浏览器弄清楚各个节点在页面的确切位置和大小
 - 调用GPU绘制、合成图层，显示在屏幕上
 
-参考：[浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+
 
