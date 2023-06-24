@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@vuepress/theme-default": "^1.0.0-rc.1",
+    "directory-tree": "^2.2.7",
     "vuepress": "^1.5.4",
     "vuepress-theme-vivek": "^1.2.2"
   }
