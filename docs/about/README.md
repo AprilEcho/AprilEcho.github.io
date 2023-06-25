@@ -1,5 +1,5 @@
 ---
-aboutme: true
+aboutme: false
 title: 关于我
 ---
 
