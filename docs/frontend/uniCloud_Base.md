@@ -1,6 +1,6 @@
 ---
-title: uniCloud基础知识
-postTime: 2022-05-06
+-idtitle: uniCloud基础知识
+postTime: 2023-6-25
 categories:
   - 前端笔记
 tags:
@@ -135,3 +135,9 @@ db.collection(artTemp,userTemp).get().then(res=>{
   console.log(res)
 })
 ```
+
+## uni-id 用户体系
+
+- 下载[https://ext.dcloud.net.cn/plugin?name=uni-id-pages](https://ext.dcloud.net.cn/plugin?name=uni-id-pages)，并在 HBuilderX 引入
+- 配置 `/cloudfunctions/common/uni-config-center/uni-id/config.json`
+  - 设置 `passwordSecret`，`tokenSecret`值（字符串）
