@@ -43,22 +43,22 @@ uniCloud
 **创建一个云对象**
 
 ```javascript
+// 云对象名：todo
 module.exports = {
-  _before: function() {
-    // 通用预处理器
-  },
-  async get(num) {
-    //传递一个参数
-    return await db
-      .collection('article')
-      .limit(num) //返回多少条数据
-      .get()
-  },
-  add: async () => {
-    await db.collection('article').add({
-      title: '测试标题',
-      content: '测试内容',
-    })
+  add(title, content) {
+    title = title.trim()
+    content = content.trim()
+    if (!title || !content) {
+      return {
+        errCode: 'INVALID_TODO',
+        errMsg: 'TODO标题或内容不可为空',
+      }
+    }
+    // ...其他逻辑
+    return {
+      errCode: 0,
+      errMsg: '创建成功',
+    }
   },
 }
 ```
@@ -66,13 +66,21 @@ module.exports = {
 **在 page 下调用该云对象**
 
 ```javascript
-//全局导入
-const db = uniCloud.database()
-//methods调用云对象
-getData() {
- db.collection("article").get().then(res => {
-   console.log(res)
-  })
+const todo = uniCloud.importObject('todo') //第一步导入云对象
+async function addTodo() {
+  try {
+    const res = await todo.add('title demo', 'content demo') //导入云对象后就可以直接调用该对象的方法了，注意使用异步await
+    uni.showToast({
+      title: '创建成功',
+    })
+  } catch (e) {
+    // 符合uniCloud响应体规范 https://uniapp.dcloud.net.cn/uniCloud/cf-functions?id=resformat，自动抛出此错误
+    uni.showModal({
+      title: '创建失败',
+      content: e.errMsg,
+      showCancel: false,
+    })
+  }
 }
 ```
 
